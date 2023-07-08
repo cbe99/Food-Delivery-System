@@ -1,12 +1,11 @@
-import { Typography } from "@mui/material";
-import MerchantForm from "./components";
+import MerchantForm from "./components/merchantForm";
+import NavigationBar from "./components/navBar";
 
 function App() {
   return (
     <div className="App">
-      <Typography variant="h5" color={'error'}>Food Delivery System</Typography>
+      <NavigationBar />
       <MerchantForm />
-      <Typography variant="overline">Christeena Borah</Typography>
     </div>
   );
 }

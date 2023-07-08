@@ -1,0 +1,1 @@
+export const GITHUB_LINK = process.env.REACT_APP_GITHUB_LINK;
