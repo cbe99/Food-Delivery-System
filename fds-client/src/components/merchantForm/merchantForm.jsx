@@ -262,16 +262,25 @@ const MerchantForm = () => {
 					</Paper>
 				</Container>
 			) : (
-				<ResponsePaper elevation={2}>
-					{responseData !== undefined && <ShowResult />}
-					<Button
-						variant="contained"
-						onClick={handleGoToForm}
-						sx={{mt: 2, mx: 'auto'}}
-					>
-						{isAddMerchantSuccess ? 'Add Another Merchant' : 'Try Again'}
-					</Button>
-				</ResponsePaper>
+				<Box
+					sx={{
+						display: 'flex',
+						justifyContent: 'center',
+						alignItems: 'center',
+						height: '100vh',
+					}}
+				>
+					<ResponsePaper elevation={2}>
+						{responseData !== undefined && <ShowResult />}
+						<Button
+							variant="contained"
+							onClick={handleGoToForm}
+							sx={{mt: 2, mx: 'auto'}}
+						>
+							{isAddMerchantSuccess ? 'Add Another Merchant' : 'Try Again'}
+						</Button>
+					</ResponsePaper>
+				</Box>
 			)}
 		</>
 	);
