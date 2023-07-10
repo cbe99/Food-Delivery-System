@@ -1,7 +1,5 @@
 # Food-Delivery-System
 
-Technical Assignment - Vymo
-
 ## Installation
 
 ### fds-client - UI
